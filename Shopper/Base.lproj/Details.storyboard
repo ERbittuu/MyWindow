@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.Cocoa.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="14460.31"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Details Controller-->
+        <scene sceneID="7ZA-LR-dxP">
+            <objects>
+                <tabViewController storyboardIdentifier="DetailsController" tabStyle="unspecified" id="8Er-hS-t0O" customClass="DetailsController" customModule="Shopper" customModuleProvider="target" sceneMemberID="viewController">
+                    <tabViewItems>
+                        <tabViewItem id="1Ib-3O-eW1"/>
+                        <tabViewItem id="lsv-ac-UDT"/>
+                        <tabViewItem id="yUu-RV-DWW"/>
+                        <tabViewItem id="OEp-Aw-phi"/>
+                        <tabViewItem id="Cuv-uW-4ht"/>
+                    </tabViewItems>
+                    <tabView key="tabView" type="noTabsNoBorder" id="UCy-9E-dS1">
+                        <rect key="frame" x="0.0" y="0.0" width="450" height="300"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <font key="font" metaFont="message"/>
+                        <connections>
+                            <outlet property="delegate" destination="8Er-hS-t0O" id="QTI-VQ-qAe"/>
+                        </connections>
+                    </tabView>
+                    <connections>
+                        <outlet property="tabView" destination="UCy-9E-dS1" id="kSz-Po-QK7"/>
+                        <segue destination="9U3-kk-VQY" kind="relationship" relationship="tabItems" id="NM0-TQ-zLF"/>
+                        <segue destination="obY-Iy-FWu" kind="relationship" relationship="tabItems" id="uEe-Re-6uO"/>
+                        <segue destination="uXt-6m-6iy" kind="relationship" relationship="tabItems" id="A0J-8Q-m7e"/>
+                        <segue destination="EK2-s1-4UB" kind="relationship" relationship="tabItems" id="uDs-cA-LLp"/>
+                        <segue destination="Cul-59-Nub" kind="relationship" relationship="tabItems" id="3iN-cC-TBj"/>
+                    </connections>
+                </tabViewController>
+                <customObject id="0eD-bv-eFq" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="25" y="689"/>
+        </scene>
+        <!--Home Controller-->
+        <scene sceneID="1pK-Zj-6hr">
+            <objects>
+                <viewController storyboardIdentifier="HomeController" id="9U3-kk-VQY" customClass="HomeController" customModule="Shopper" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" id="FO4-9I-zwC">
+                        <rect key="frame" x="0.0" y="0.0" width="450" height="300"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <subviews>
+                            <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="XbP-1N-ruB">
+                                <rect key="frame" x="205" y="275" width="40" height="17"/>
+                                <textFieldCell key="cell" lineBreakMode="clipping" title="Home" id="Ipa-Gr-EDU">
+                                    <font key="font" usesAppearanceFont="YES"/>
+                                    <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                                    <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                                </textFieldCell>
+                            </textField>
+                        </subviews>
+                        <constraints>
+                            <constraint firstItem="XbP-1N-ruB" firstAttribute="top" secondItem="FO4-9I-zwC" secondAttribute="top" constant="8" id="2vr-7S-prL"/>
+                            <constraint firstItem="XbP-1N-ruB" firstAttribute="centerX" secondItem="FO4-9I-zwC" secondAttribute="centerX" id="Ap1-xa-Fkc"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <customObject id="YXJ-rp-WMC" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="675" y="-49"/>
+        </scene>
+        <!--Customer Controller-->
+        <scene sceneID="9uw-i7-yHc">
+            <objects>
+                <viewController storyboardIdentifier="CustomerController" id="obY-Iy-FWu" customClass="CustomerController" customModule="Shopper" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" id="FOu-np-Z07">
+                        <rect key="frame" x="0.0" y="0.0" width="450" height="300"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <subviews>
+                            <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="Klz-R3-vOJ">
+                                <rect key="frame" x="190" y="275" width="70" height="17"/>
+                                <textFieldCell key="cell" lineBreakMode="clipping" title="Customers" id="6UH-Lr-lFA">
+                                    <font key="font" usesAppearanceFont="YES"/>
+                                    <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                                    <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                                </textFieldCell>
+                            </textField>
+                        </subviews>
+                        <constraints>
+                            <constraint firstItem="Klz-R3-vOJ" firstAttribute="centerX" secondItem="FOu-np-Z07" secondAttribute="centerX" id="FK6-f3-23f"/>
+                            <constraint firstItem="Klz-R3-vOJ" firstAttribute="top" secondItem="FOu-np-Z07" secondAttribute="top" constant="8" id="KMW-Z2-Bgb"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <customObject id="pJZ-PY-qo3" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="675" y="323"/>
+        </scene>
+        <!--Setting Controller-->
+        <scene sceneID="UxB-z1-TyZ">
+            <objects>
+                <viewController storyboardIdentifier="SettingController" id="Cul-59-Nub" customClass="SettingController" customModule="Shopper" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" id="pIM-rD-ex2">
+                        <rect key="frame" x="0.0" y="0.0" width="450" height="300"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <subviews>
+                            <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="YaX-lT-2GA">
+                                <rect key="frame" x="201" y="275" width="48" height="17"/>
+                                <textFieldCell key="cell" lineBreakMode="clipping" title="Setting" id="pcX-Xt-akr">
+                                    <font key="font" usesAppearanceFont="YES"/>
+                                    <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                                    <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                                </textFieldCell>
+                            </textField>
+                        </subviews>
+                        <constraints>
+                            <constraint firstItem="YaX-lT-2GA" firstAttribute="centerX" secondItem="pIM-rD-ex2" secondAttribute="centerX" id="J9N-6g-sdZ"/>
+                            <constraint firstItem="YaX-lT-2GA" firstAttribute="top" secondItem="pIM-rD-ex2" secondAttribute="top" constant="8" id="Udi-op-Dm9"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <customObject id="2Ja-e6-re6" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="681" y="1432"/>
+        </scene>
+        <!--Product Contoller-->
+        <scene sceneID="71L-0O-Mpu">
+            <objects>
+                <viewController storyboardIdentifier="ProductContoller" id="EK2-s1-4UB" customClass="ProductContoller" customModule="Shopper" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" id="gef-6V-mHk">
+                        <rect key="frame" x="0.0" y="0.0" width="450" height="300"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <subviews>
+                            <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="nTT-Pm-Iyf">
+                                <rect key="frame" x="199" y="275" width="52" height="17"/>
+                                <textFieldCell key="cell" lineBreakMode="clipping" title="Product" id="KZB-0H-Q6b">
+                                    <font key="font" usesAppearanceFont="YES"/>
+                                    <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                                    <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                                </textFieldCell>
+                            </textField>
+                        </subviews>
+                        <constraints>
+                            <constraint firstItem="nTT-Pm-Iyf" firstAttribute="centerX" secondItem="gef-6V-mHk" secondAttribute="centerX" id="aja-8W-7ks"/>
+                            <constraint firstItem="nTT-Pm-Iyf" firstAttribute="top" secondItem="gef-6V-mHk" secondAttribute="top" constant="8" id="e7I-N6-5wY"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <customObject id="ljp-1J-Ps7" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="681" y="1056"/>
+        </scene>
+        <!--Supplier Controller-->
+        <scene sceneID="Th7-tG-VaU">
+            <objects>
+                <viewController storyboardIdentifier="SupplierController" id="uXt-6m-6iy" customClass="SupplierController" customModule="Shopper" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" id="uYL-Rc-kSb">
+                        <rect key="frame" x="0.0" y="0.0" width="450" height="300"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <subviews>
+                            <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="umD-gF-e93">
+                                <rect key="frame" x="198" y="275" width="54" height="17"/>
+                                <textFieldCell key="cell" lineBreakMode="clipping" title="Supplier" id="5f1-5b-Zur">
+                                    <font key="font" usesAppearanceFont="YES"/>
+                                    <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                                    <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                                </textFieldCell>
+                            </textField>
+                        </subviews>
+                        <constraints>
+                            <constraint firstItem="umD-gF-e93" firstAttribute="centerX" secondItem="uYL-Rc-kSb" secondAttribute="centerX" id="4Vi-ea-djd"/>
+                            <constraint firstItem="umD-gF-e93" firstAttribute="top" secondItem="uYL-Rc-kSb" secondAttribute="top" constant="8" id="ixU-2w-zzD"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <customObject id="zmE-eb-a28" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="675" y="689"/>
+        </scene>
+    </scenes>
+</document>

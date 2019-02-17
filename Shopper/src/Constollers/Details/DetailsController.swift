@@ -1,27 +1,22 @@
 //
-//  ViewController.swift
+//  DetailsController.swift
 //  Shopper
 //
-//  Created by Utsav Patel on 2/16/19.
+//  Created by Utsav Patel on 2/17/19.
 //  Copyright © 2019 erbittuu. All rights reserved.
 //
 
 import Cocoa
 
-class ViewController: NSViewController {
-
+class DetailsController: NSTabViewController {
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
     }
-
+    
     override var representedObject: Any? {
         didSet {
-        // Update the view, if already loaded.
+            // Update the view, if already loaded.
         }
     }
-
-
 }
-
